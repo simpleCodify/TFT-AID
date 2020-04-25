@@ -8,15 +8,11 @@ body, html {
 }
 .champ-card {
   border-radius: 25px;
+  cursor: pointer;
 }
 .champ-portrait {
   width: 70%;
   border-radius: 50%;
-}
-.details-button {
-  border: 2px solid gray;
-  width: 60%;
-  cursor: pointer;
 }
 
 .modal-title {

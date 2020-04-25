@@ -16,13 +16,12 @@ function ChampionCard(props) {
 
 	return (
 		<>
-			<Card className="col-md-1 mx-3 my-3 px-1 pt-3 champ-card">
+			<Card className="col-md-1 mx-3 my-3 px-0 pt-3 champ-card" onClick={handleShow}>
 				<Card.Img variant="top" src={portraitsrc} className="img-responsive champ-portrait mx-auto my-auto" style={{border: portraitBorder }} />
-				<Card.Body>
-					<Card.Text className="text-center">{name}</Card.Text>
+				<Card.Body className="p-0">
+						<Card.Text className="text-center">{name}</Card.Text>
 				</Card.Body>
 
-				<div className="text-center mx-auto details-button" onClick={handleShow}>details</div>
 			</Card>
 
 			<Modal show={show} onHide={handleClose} centered>
@@ -78,7 +77,7 @@ function ChampionCard(props) {
 					<p>Armor: {armor}</p>
 					<p>Critical Rate: {criticalRate}%</p>
 					<p>Range: {range}</p>
-					
+
 				</Modal.Body>
 			</Modal>
 		</>

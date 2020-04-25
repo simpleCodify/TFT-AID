@@ -21,10 +21,14 @@ class TeamBuilder extends Component {
 
 	searchData = (e) => {
 		let queryData = null;
+		let filterVal = e.target.value.toLowerCase()
+		console.log("Filter Value: ", filterVal)
 		if (e.target.value !== "") {
 			queryData = [];
 			this.state.championData.forEach((champion) => {
-				if (champion.name.toLowerCase().indexOf(e.target.value) !== -1) {
+				let traits = champion.traits.join(" ").toLowerCase();
+				console.log("Traits: ", traits)
+				if ((champion.name.toLowerCase().indexOf(e.target.value) !== -1) || (traits.includes(filterVal)) === true ) {
 					if (queryData.length < 10) {
 						queryData.push(champion);
 					}
@@ -82,7 +86,6 @@ class TeamBuilder extends Component {
     return (
       <div className="mx-auto col-md-10">
 				<SearchBar search={this.searchData.bind(this)} />
-        {/* <Row className="mx-auto champ-box">{renderChampCards}</Row> */}
 				<Row className="mx-auto champ-box">
 					{(this.state.filtered) ? renderSearch : renderChampCards }
 				</Row>
