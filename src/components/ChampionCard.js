@@ -74,11 +74,11 @@ function ChampionCard(props) {
 					<div className="mana-bar">
 						<div className="mana-bar-filled" style={{ width: manaBar, backgroundColor: "blue", borderRadius: manaBarRadius }}  />
 					</div>
-					<p>Mana: {mana}</p>
-					<p>Starting-Mana: {startingMana}</p>
+
 					<p>Armor: {armor}</p>
 					<p>Critical Rate: {criticalRate}%</p>
 					<p>Range: {range}</p>
+					
 				</Modal.Body>
 			</Modal>
 		</>
