@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body, html {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.champ-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.champ-card {
+  border-radius: 25px;
+}
+.champ-portrait {
+  width: 70%;
+  border-radius: 50%;
+}
+.details-button {
+  border: 2px solid gray;
+  width: 60%;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.modal-title {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.modal-body {
+
+}
+.mana-bar {
+  width: 180px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 35px;
+  background-color: lightgray;
+}
+.mana-bar-filled {
+  height: 100%;
+  background-color: blue;
+
+}
+.modal-footer {
+
 }
