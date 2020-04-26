@@ -75,6 +75,8 @@ function ChampionCard(props) {
 					</div>
 
 					<p>Armor: {armor}</p>
+					<p>Magic Resist: {magicResist}</p>
+					<p>Attack Speed: {attackSpeed}</p>
 					<p>Critical Rate: {criticalRate}%</p>
 					<p>Range: {range}</p>
 

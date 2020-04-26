@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const NaviBar = () => {
     return (
-      <Navbar className="fontvariantsc mx-auto">
+      <Navbar className="fontvariantsc mx-auto my-3 mb-5">
 				<Navbar.Collapse>
 					<Nav className="justify-content-center mx-auto">
 						<NavLink exact to="/" className="nav-link mx-4" activeStyle={{ fontWeight: "bold", color: "black" }}>

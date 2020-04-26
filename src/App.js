@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 // Components Imports
-import ChampionList from "./components/ChampionList";
 import NaviBar from "./components/NaviBar";
 import Home from "./components/Home";
+import ChampionList from "./components/ChampionList";
+import TeamBuilder from "./components/TeamBuilder";
+import TierList from "./components/TierList";
 
 
 class App extends Component {
@@ -26,7 +28,9 @@ class App extends Component {
 
           <Route exact path="/" children={ <Home /> } />
           <Route path="/champions" children={ <ChampionList />} />
-
+          <Route path="/teambuilder" children={ <TeamBuilder />} />
+          <Route path="/tierlist" children={ <TierList />} />
+          
         </Switch>
       </>
     )
