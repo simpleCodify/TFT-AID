@@ -1,0 +1,161 @@
+{
+  "S+": [
+		{
+			"name": "Dark Star Snipers",
+			"units": ["Ashe", "Jarvan IV", "Jhin", "Karma", "Lulu", "Lux", "Shaco", "Xerath"],
+			"synergies": [
+				{"name": "Sniper", "value": 2},
+				{"name": "Dark Star", "value": 6},
+				{"name": "Celestial", "value": 2},
+				{"name": "Mystic", "value": 2},
+				{"name": "Sorcerer", "value": 2}
+			],
+			"counters": ["Brawler Blaster", "Shen", "Healing Reduction"]
+		}
+	],
+  "S": [
+		{
+			"name": "Mech Infiltrators",
+			"units": ["Annie", "Rumble", "Fizz", "Shaco", "Kai'Sa", "Lux", "Kha'Zix"],
+			"synergies": [
+				{"name": "Demolitionist", "value": 2},
+				{"name": "Mech-Pilot", "value": 3},
+				{"name": "Infiltrator", "value": 4},
+				{"name": "Sorcerer", "value": 2}
+			],
+			"counters": ["Star Guardian Sorcerers", "Zephyr", "Trap Claw"]
+		}
+	],  
+	"A+": [
+		{
+			"name": "Brawler Blasters",
+			"units": ["Malphite", "Cho'Gath", "Vi", "Blitzcrank", "Jinx", "Miss Fortune", "Lucian", "Ezreal"],
+			"synergies": [
+				{"name": "Blaster", "value": 4},
+				{"name": "Brawler", "value": 4},
+				{"name": "Mercenary", "value": 1},
+				{"name": "Chrono", "value": 2}
+			],
+			"counters": ["Infiltrators"]
+		}
+	],
+  "A": [
+		{
+			"name": "Cybernetics",
+			"units": ["Shen", "Fiora", "Leona", "Vi", "Irelia", "Lucian", "Ekko", "Ezreal"],
+			"synergies": [
+				{"name": "Cybernetic", "value": 6},
+				{"name": "Blaster", "value": 2},
+				{"name": "Chrono", "value": 2},
+				{"name": "Blademaster", "value": 3}
+			],
+			"counters": ["Star Guardian Sorcerers"]
+		}
+	],
+  "A-": [
+		{
+			"name": "Chrono Kayle / Blademasters",
+			"units": ["Shen", "Kassadin", "Wukong", "Thresh", "Kayle", "Ezreal", "Miss Fortune", "Xayah"],
+			"synergies": [
+				{"name": "Mana-Reaver", "value": 2},
+				{"name": "Mercenary", "value": 1},
+				{"name": "Valkyrie", "value": 2},
+				{"name": "Chrono", "value": 4},
+				{"name": "Blaster", "value": 2},
+				{"name": "Celestial", "value": 2},
+				{"name": "Blademaster", "value": 3}
+			],
+			"counters": ["Mech Infiltrators"]
+		}
+	],
+  "B+": [
+		{
+			"name": "Star Guardian Sorcerers",
+			"units": ["Neeko", "Poppy", "Zoe", "Ahri", "Syndra", "Soraka", "Lux"],
+			"synergies": [
+				{"name": "Star Guardian", "value": 6},
+				{"name": "Sorcerer", "value": 2}
+			],
+			"counters": ["Dark Star Snipers", "Shroud of Stillness & Mana Reaver"]
+		}
+	],
+  "B": [
+		{
+			"name": "Bang Bros / Rebel Blademasters",
+			"units": ["Shen", "Blitzcrank", "Yasuo", "Master Yi", "Sona", "Karma"],
+			"synergies": [
+				{"name": "Chrono", "value": 2},
+				{"name": "Mystic", "value": 2},
+				{"name": "Blademaster", "value": 3},
+				{"name": "Rebel", "value": 3}
+			],
+			"counters": []
+		}
+	],
+  "B-": [
+		{
+			"name": "Celestial Space Pirate",
+			"units": ["Xin Zhao", "Jayce", "Kassadin", "Darius", "Rakan", "Ashe"],
+			"synergies": [
+				{"name": "Mana-Reaver", "value": 2},
+				{"name": "Celestial", "value": 4},
+				{"name": "Protector", "value": 2},
+				{"name": "Space Pirate", "value": 2}
+			],
+			"counters": []
+		},
+		{
+			"name": "Void Brawlers",
+			"units": ["Blitzcrank", "Cho-Gath", "Vi", "Malphite", "Vel'Koz", "Sona", "Twisted Fate", "Kha'Zix"],
+			"synergies": [
+				{"name": "Brawler", "value": 4},
+				{"name": "Void", "value": 3},
+				{"name": "Chrono", "value": 2},
+				{"name": "Sorcerer", "value": 2}
+			],
+			"counters": []
+		}
+	],
+  "C+": [
+		{
+			"name": "6 Rebels",
+			"units": ["Master Yi", "Malphite", "Aurelion Sol", "Jinx", "Yasuo", "Ziggs", "Kayle", "Miss Fortune"],
+			"synergies": [
+				{"name": "Demolitionist", "value": 1},
+				{"name": "Mercenary", "value": 1},
+				{"name": "Starship", "value": 1},
+				{"name": "Valkyrie", "value": 2},
+				{"name": "Rebel", "value": 6},
+				{"name": "Blaster", "value": 2},
+				{"name": "Blademaster", "value": 3}
+			],
+			"counters": []
+		}
+	],
+  "C": [
+		{
+			"name": "Vanguard Snipers",
+			"units": ["Jayce", "Wukong", "Poppy", "Mordekaiser", "Lulu", "Karma", "Jhin", "Ashe"],
+			"synergies": [
+				{"name": "Sniper", "value": 2},
+				{"name": "Vanguard", "value": 4},
+				{"name": "Celestial", "value": 2},
+				{"name": "Mystic", "value": 2},
+				{"name": "Dark Star", "value": 3}
+			],
+			"counters": []
+		}
+	],
+  "C-": [
+		{
+			"name": "Protector Mystics",
+			"units": ["Kassadin", "Neeko", "Xin Zhao", "Rakan", "Sona", "Karma", "Lulu", "Soraka"],
+			"synergies": [
+				{"name": "Mystic", "value": 4},
+				{"name": "Celestial", "value": 4},
+				{"name": "Protector", "value": 4}
+			],
+			"counters": []
+		}
+	]
+}
