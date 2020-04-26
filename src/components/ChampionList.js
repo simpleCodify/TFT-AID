@@ -5,7 +5,7 @@ import { Row } from "react-bootstrap";
 import ChampionCard from "./ChampionCard";
 import SearchBar from './SearchBar';
 
-class TeamBuilder extends Component {
+class ChampionList extends Component {
   constructor(props) {
     super(props);
 
@@ -94,4 +94,4 @@ class TeamBuilder extends Component {
   }
 }
 
-export default TeamBuilder;
+export default ChampionList;

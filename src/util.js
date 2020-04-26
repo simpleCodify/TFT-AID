@@ -24,6 +24,9 @@ export const getPortraitBorder = (cost) => {
 }
 
 export const manaBarCurrent = (mana, startingMana) => {
+    if (mana === 0) {
+        return "0%"
+    }
     const manaPercentage = Math.round((startingMana / mana) * 100)
     const manaBarWidth = `${manaPercentage}%`
 
