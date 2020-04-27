@@ -36,3 +36,11 @@ body, html {
 .modal-footer {
 
 }
+
+.champion-table {
+  border: 2px solid gray;
+}
+.team-table {
+  border: 2px solid black;
+  height: 400px;
+}
