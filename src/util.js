@@ -1,3 +1,5 @@
+import tierlist from "./data/tierlist.json";
+
 const portraitBorderColors = [
   "#ababab",
   "#78bd6a",
@@ -49,29 +51,56 @@ export const manaBarBorderRadius = (mana, startingMana) => {
 };
 
 export const getCostUnits = (data, num) => {
-	let filtered = data.filter(ea => ea.cost === num)
-	return filtered;
-}
-
-export const reorder = (list, startIndex, endIndex) => {
-	console.log("LIST: ", list)
-	const result = Array.from(list);
-	const [removed] = result.splice(startIndex, 1);
-	result.splice(endIndex, 0, removed);
-
-	return result;
+  let filtered = data.filter((ea) => ea.cost === num);
+  return filtered;
 };
 
-export const move = (source, destination, droppableSource, droppableDestination) => {
-	const sourceClone = Array.from(source);
-	const destClone = Array.from(destination);
-	const [removed] = sourceClone.splice(droppableSource.index, 1);
+let keySuggestion = {};
 
-	destClone.splice(droppableDestination.index, 0, removed);
+export const suggestSynergy = (currentTeam) => {
+	// console.log("currentTeam", currentTeam)
 
-	const result = {};
-	result[droppableSource.droppableId] = sourceClone;
-	result[droppableDestination.droppableId] = destClone;
+  function test(tier, unit) {
+    let unitName = unit.name
+    let tierName;
+    let units;
 
-	return result;
+    Object.entries(tier).forEach((ea) => {
+      const tierGrade = ea[0];
+      ea[1].forEach((ins) => {
+				tierName = ins.name;
+        units = ins.units;
+        if (units.includes(unitName)) {
+          // console.log("Found a match inside units", units)
+
+          let reqUnits = {}
+          reqUnits.unit = units
+          let unitIndex = reqUnits.unit.indexOf(unitName)
+          reqUnits.unit.splice(unitIndex, 1);
+
+					keySuggestion[tierName] = reqUnits
+					keySuggestion[tierName]["grade"] = tierGrade
+        }
+      });
+    });
+    // console.log("test: ending keySuggestion:", keySuggestion);
+  }
+
+
+  function arraytest(currentTeam) {
+    const tierABC = JSON.parse(JSON.stringify(tierlist))
+  
+		if (currentTeam.length < 1) {
+      keySuggestion = {} 
+    }
+    else {
+    // console.log("arraytest: currentTeam : " , currentTeam);
+    currentTeam.forEach((ea) => {
+      test(tierABC, ea);
+    });
+    }
+	}
+	
+  arraytest(currentTeam);
+	return keySuggestion
 };

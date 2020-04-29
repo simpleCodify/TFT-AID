@@ -21,7 +21,6 @@ function ChampionCard(props) {
 				<Card.Body className="p-0">
 						<Card.Text className="text-center">{name}</Card.Text>
 				</Card.Body>
-
 			</Card>
 
 			<Modal show={show} onHide={handleClose} centered>
